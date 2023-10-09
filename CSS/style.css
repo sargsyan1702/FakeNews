@@ -41,6 +41,10 @@ article h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
 }
+h2.new::before {
+    content: "New! ";
+    color: #000e88;
+}
 .article-meta {
     color: rgb(134, 142, 150);
     margin-bottom: 5px;
@@ -50,10 +54,14 @@ article img {
     height: 300px;
     object-fit: cover;
 }
+article:nth-child(even) {
+    background-color: #d6b80f;
+}
 footer {
     padding-top: 20px;
     padding-bottom: 60px;
     text-align: center;
+    background-color: #d6b80f;
 }
 footer .links {
     margin-bottom: 50px;
